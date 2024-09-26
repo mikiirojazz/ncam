@@ -1,0 +1,56 @@
+# ncam.conf generated automatically by NCAM 1.1
+# Read more: https://www.lonasdigital.com
+
+[global]
+logfile                       = /dev/null
+maxecmtime                    = 0
+maxecmtimenotfound            = 0
+fallbacktimeout               = 1500
+waitforcards_extra_delay      = 800
+preferlocalcards              = 1
+lb_nbest_readers              = 2
+lb_savepath                   = /tmp/stats
+failbantime                   = 90
+failbancount                  = 5
+
+[anticasc]
+ac_enabled                    = 1
+numusers                      = 1
+aclogfile                     = /tmp/ncam_ac.log
+
+[cache]
+max_time                      = 8
+csp_port                      = 20090
+csp_allow_reforward           = 1
+
+[newcamd]
+port                          = 50001@1810:000000,004001,004101;50002@0100:004106,004108,005001;50003@0100:003311,003315,003317;50004@0000:003311
+allowed                       = 0.0.0.0-255.255.255.255
+key                           = 0102030405060708091011121314
+
+[cccam]
+port                          = 15020
+nodeid                        = CAB3FADD5D12F600
+version                       = 2.2.1
+reshare                       = 1
+updateinterval                = 30
+autosidblock                  = 0
+
+[streamrelay]
+stream_relay_enabled          = 0
+
+[dvbapi]
+pmt_mode                      = 0
+user                          = visor
+boxtype                       = dreambox
+
+[webif]
+httpport                      = 8181
+httpuser                      = root
+httppwd                       = toor
+httphelplang                  = en
+httplocale                    = en_EN
+httphideidleclients           = 0
+httpallowed                   = 0.0.0.0-255.255.255.255
+httputf8                      = 0
+
